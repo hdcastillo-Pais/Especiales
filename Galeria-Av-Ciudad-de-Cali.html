@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Malpelo: Santuario en la mitad del Pacífico Colombiano</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <!-- <link rel="stylesheet" href="https://multimedia.semana.com/2023/02_febrero/pruebas/cancer/style1_1.css"> -->
+    <!--<link rel="stylesheet" href="style10.css"> -->
+    <!---------------------------------------- Style ---------------------------------------->
+    <style>
+      @font-face {
+        font-family: "Lato-Bold";
+        src: url(https://multimedia.elpais.com.co/2023/06_junio/recursos/lato/Lato-Bold.ttf);
+      }
+      @font-face {
+        font-family: "Lato-Black";
+        src: url(https://multimedia.elpais.com.co/2023/06_junio/recursos/lato/Lato-Black.ttf);
+      }
+      @font-face {
+        font-family: "Lato-BlackItalic";
+        src: url(https://multimedia.elpais.com.co/2023/06_junio/recursos/lato/Lato-BlackItalic.ttf);
+      }
+      @font-face {
+        font-family: "Lato-BoldItalic";
+        src: url(https://multimedia.elpais.com.co/2023/06_junio/recursos/lato/Lato-BoldItalic.ttf);
+      }
+      @font-face {
+        font-family: "Lato-Italic";
+        src: url(https://multimedia.elpais.com.co/2023/06_junio/recursos/lato/Lato-Italic.ttf);
+      }
+      @font-face {
+        font-family: "Lato-Light";
+        src: url(https://multimedia.elpais.com.co/2023/06_junio/recursos/lato/Lato-Light.ttf);
+      }
+      @font-face {
+        font-family: "Lato-Light";
+        src: url(https://multimedia.elpais.com.co/2023/06_junio/recursos/lato/Lato-LightItalic.ttf);
+      }
+      @font-face {
+        font-family: "Lato-Regular";
+        src: url(https://multimedia.elpais.com.co/2023/06_junio/recursos/lato/Lato-Regular.ttf);
+      }
+      @font-face {
+        font-family: "Lato-Thin";
+        src: url(https://multimedia.elpais.com.co/2023/06_junio/recursos/lato/Lato-Thin.ttf);
+      }
+      @font-face {
+        font-family: "Lato-ThinItalic";
+        src: url(https://multimedia.elpais.com.co/2023/06_junio/recursos/lato/Lato-ThinItalic.ttf);
+      }
+    </style>
+    <style>
+      .desktop3 {
+        /*	max-width: 940px;
+margin: auto;*/
+      }
+      .slider3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .carousel {
+        width: 100%;
+      }
+      .carousel-indicators {
+        position: absolute;
+        bottom: 40px;
+        border-radius: #c2aff0;
+      }
+      .carousel-indicators li {
+        width: 9px;
+        height: 9px;
+      }
+      .carousel-indicators .active {
+        width: 13px;
+        height: 10px;
+        border: 1px solid #c2aff0;
+        background-color: #c2aff0;
+      }
+      .carousel-inner .item img {
+        height: 100%;
+        width: 100%;
+        width: 100%;
+      }
+      .carousel-control {
+        color: #f9bb4e;
+      }
+      .cajon-texto {
+        width: 100%;
+        font-family: "Lato-Regular";
+        height: 110px;
+        font-size: 13px;
+        line-height: 16px;
+        padding: 12px 30px;
+      }
+      .pie-de-foto {
+        font-size: 16px;
+        font-family: "Lato-Bold";
+        line-height: 23px;
+      }
+      @media (max-width: 768px) {
+        .cajon-texto {
+          width: 100%;
+          height: 110px;
+          font-size: 11px;
+          line-height: 14px;
+          padding: 5px 13px;
+        }
+        .pie-de-foto {
+          font-size: 13px;
+        }
+        .carousel-indicators {
+          bottom: 40px;
+        }
+      }
+      @media (max-width: 768px) {
+        /*.img1{
+content: url("img1_mb.jpg")
+}
+.img2{
+content: url("img2_mb.jpg")
+}
+.img3{
+content: url("img3_mb.jpg")
+}
+.img4{
+content: url("img4_mb.jpg")
+}
+.img5{
+content: url("img5_mb.jpg")
+}
+.img6{
+content: url("img6_mb.jpg")
+}
+.img7{
+content: url("img7_mb.jpg")
+}
+.img8{
+content: url("img8_mb.jpg")
+}
+.img9{
+content: url("img9_mb.jpg")
+}
+.img10{
+content: url("img10_mb.jpg")
+}
+.img11{
+content: url("img11_mb.jpg")
+}
+.img12{
+content: url("img12_mb.jpg")
+}
+.img13{
+content: url("img13_mb.jpg")
+}
+.img14{
+content: url("img14_mb.jpg")
+}
+
+*/
+      }
+    </style>
+    <!---------------------------------------- Style ---------------------------------------->
+  </head>
+  <body>
+    <div class="slider3 desktop3">
+      <div
+        id="myCarousel3"
+        class="carousel slide"
+        data-ride="carousel"
+        data-interval="4000"
+      >
+        <!-- Indicators -->
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="item active">
+            <img
+              class="img1"
+              src="https://hdcastillo-pais.github.io/Especiales/Galer%C3%ADa/12.jpg"
+              alt="El mundo en imágenes: los hechos más relevantes, acá"
+            />
+            <a
+              class="cajon-texto"
+              style="
+                color: #ffffff;
+                background: #181c16;
+                display: block;
+                font-weight: 300;
+                text-decoration: none;
+              "
+              ><span class="pie-de-foto">Problemas de delimitación</span><br />La Avenida
+              Ciudad de Cali en varios de sus carriles no posee ningún tipo de
+              delimitación sobre el asfaltado que ayude a preservar la seguridad
+              de los conductores.</a
+            >
+          </div>
+          <div class="item">
+            <img
+              src="https://hdcastillo-pais.github.io/Especiales/Galer%C3%ADa/13.jpg"
+              alt="El mundo en imágenes: los hechos más relevantes, acá"
+            />
+            <a
+              class="cajon-texto"
+              style="
+                color: #ffffff;
+                background: #181c16;
+                display: block;
+                font-weight: 300;
+                text-decoration: none;
+              "
+              ><span class="pie-de-foto">Vía concurrida</span><br />La
+              Avenida Ciudad de Cali es una de las vías más utilizadas por los
+              ciudadanos que se desplazan entre el norte y el sur de la capital
+              vallecaucana.</a
+            >
+          </div>
+          <div class="item">
+            <img
+              src="https://hdcastillo-pais.github.io/Especiales/Galer%C3%ADa/16.jpg"
+              alt="El mundo en imágenes: los hechos más relevantes, acá"
+            />
+            <a
+              class="cajon-texto"
+              style="
+                color: #ffffff;
+                background: #181c16;
+                display: block;
+                font-weight: 300;
+                text-decoration: none;
+              "
+              ><span class="pie-de-foto">Falta de ciclovías</span><br />La Avenida
+              Ciudad de Cali en varios de sus tramos no posee ciclo
+              infraestructura que proteja la vida de los ciclistas.
+            </a>
+          </div>
+          <div class="item">
+            <img
+              src="https://hdcastillo-pais.github.io/Especiales/Galer%C3%ADa/18.jpg"
+              alt="El mundo en imágenes: los hechos más relevantes, acá"
+            />
+            <a
+              class="cajon-texto"
+              style="
+                color: #ffffff;
+                background: #181c16;
+                display: block;
+                font-weight: 300;
+                text-decoration: none;
+              "
+              ><span class="pie-de-foto">Andenes inexistentes</span><br />Gran parte
+              de los andenes de la Avenida Ciudad de Cali se encuentran ocupados
+              por estructuras de establecimientos comerciales que impiden la
+              circulación de los peatones.</a
+            >
+          </div>
+          <div class="item">
+            <img
+              src="https://hdcastillo-pais.github.io/Especiales/Galer%C3%ADa/19.jpg"
+              alt="El mundo en imágenes: los hechos más relevantes, acá"
+            />
+            <a
+              class="cajon-texto"
+              style="
+                color: #ffffff;
+                background: #181c16;
+                display: block;
+                font-weight: 300;
+                text-decoration: none;
+              "
+              ><span class="pie-de-foto">Circulación de norte a sur</span><br />La
+              Avenida Ciudad de Cali es una de las vías más transitadas de la
+              capital vallecaucana, por ahí circula el 40% de la población
+              caleña.</a
+            >
+          </div>
+          <div class="item">
+            <img
+              src="https://hdcastillo-pais.github.io/Especiales/Galer%C3%ADa/20.jpg"
+              alt="El mundo en imágenes: los hechos más relevantes, acá"
+            />
+            <a
+              class="cajon-texto"
+              style="
+                color: #ffffff;
+                background: #181c16;
+                display: block;
+                font-weight: 300;
+                text-decoration: none;
+              "
+              ><span class="pie-de-foto">Vía en mal estado</span><br />
+              Algunos tramos de la Avenida Ciudad de Cali se encuentran en
+              pésimas condiciones para la circulación de los vehículos.
+            </a>
+          </div>
+          <div class="item">
+            <img
+              src="https://hdcastillo-pais.github.io/Especiales/Galer%C3%ADa/22.jpg"
+              alt="El mundo en imágenes: los hechos más relevantes, acá"
+            />
+            <a
+              class="cajon-texto"
+              style="
+                color: #ffffff;
+                background: #181c16;
+                display: block;
+                font-weight: 300;
+                text-decoration: none;
+              "
+              ><span class="pie-de-foto">Ausencia de carriles</span><br />La
+              Avenida Ciudad de Cali en su parte más ancha posee tres carriles
+              para la circulación de los automóviles.</a
+            >
+          </div>
+          <div class="item">
+            <img
+              src="https://hdcastillo-pais.github.io/Especiales/Galer%C3%ADa/23.jpg"
+              alt="El mundo en imágenes: los hechos más relevantes, acá"
+            />
+            <a
+              class="cajon-texto"
+              style="
+                color: #ffffff;
+                background: #181c16;
+                display: block;
+                font-weight: 300;
+                text-decoration: none;
+              "
+              ><span class="pie-de-foto">Urbanismo para mejorar</span><br />La
+              Avenida Ciudad de Cali en algunos de sus tramos no posee un
+              urbanismo que invite a la circulación de los transeúntes.
+            </a>
+          </div>
+          <div class="item">
+            <img
+              src="https://hdcastillo-pais.github.io/Especiales/Galer%C3%ADa/27.jpg"
+              alt="El mundo en imágenes: los hechos más relevantes, acá"
+            />
+            <a
+              class="cajon-texto"
+              style="
+                color: #ffffff;
+                background: #181c16;
+                display: block;
+                font-weight: 300;
+                text-decoration: none;
+              "
+              ><span class="pie-de-foto">Obras que transforman</span><br />Luego del
+              puente que une la Avenida de Ciudad con los barrios Ciudad Córdoba
+              y Ciudad 2000, el entorno de la vía se transforma de manera
+              radical con la demarcación del asfalto, la señalización e
+              inclusión de ciclo infraestructura.
+            </a>
+          </div>
+        </div>
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel3" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+          <span class="sr-only">anterior</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel3" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+          <span class="sr-only">Siguiente</span>
+        </a>
+      </div>
+    </div>
+  </body>
+</html>
